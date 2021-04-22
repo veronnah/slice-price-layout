@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slice Price | Profile</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section class="page-content">
+        <aside class="sidebar">
+            <div class="sidebar-nav">
+                <div class="sidebar__title">
+                    <h1 class="title">
+                        <img src="./img/titile-logo.svg">
+                        Slice Price
+                    </h1>
+                    <h4 class="subtitle">ИП «Название компании»</h4>
+                </div>
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li><a href="#!">Мой профиль</a></li>
+                        <li><a href="#!">Добавление товара </a></li>
+                        <li><a href="#!">Расход и доход</a></li>
+                        <li><a href="#!">Заказы</a></li>
+                        <li><a href="#!">Аналитика продаж и Финансы</a></li>
+                        <li><a href="#!">Настройка и подключение услуг по продвижению</a></li>
+                        <li><a href="#!">Поддержка</a></li>
+                        <li><a href="#!">Рейтинг идей</a></li>
+                    </ul>
+                </nav>
+            </div>
+          
+            <div class="sidebar__profile-info">
+                <div class="balance">
+                    <h4>Баланс</h4>
+                    <div><img src="./img/circle.svg"> 234 545.34 Р</div>
+                </div>
+                <div class="notifications"><img src="./img/circle.svg">Уведомления</div>
+                <div><img src="./img/circle.svg">Василий Теркин</div>
+            </div>
+        </aside>
+        <main>
+            <div class="main__blocks">
+                <div class="main__blocks-block"></div>
+                <div class="main__blocks-block"></div>
+                <div class="main__blocks-block"></div>
+                <div class="main__blocks-block"></div>
+                <div class="main__blocks-block"></div>
+                <div class="main__blocks-block"></div>
+            </div>
+            <div class="analytics">
+                <h3>Аналитика доходов/расходов</h3>
+                <div class="analytics__chart">
+                    <div class="chart-nav">
+                        <div class="chart-nav__buttons">
+                            <button class="chart-nav__select-period">День</button>
+                            <button class="chart-nav__select-period">Неделя</button>
+                            <button class="chart-nav__select-period">Месяц</button>
+                            <button class="chart-nav__select-period">Год</button>
+                            <button class="chart-nav__select-period">Выбрать период</button>
+                        </div>
+                        <input type="range" name="" id="">
+                    </div>
+                    <div class="analytics-chart">
+                        <canvas id="firstChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+                <a href="#!">Правила пользвоания сервисом</a>
+                <a href="#!">Политика конфиденциальности</a>
+                <a href="#!">Сервис разработан компанией Scripta IT</a>
+        </footer>
+    </section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
+    <script src="./js/charts.js"></script>
+</body>
+
+</html>
