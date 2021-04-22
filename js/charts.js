@@ -1,6 +1,8 @@
 var ctx = document.getElementById('firstChart').getContext('2d');
+
 Chart.defaults.global.defaultFontColor = '#fff';
 Chart.defaults.global.defaultFontStyle = 'light';
+
 var firstChart = new Chart(ctx, {
     type: 'line',
     data: {
@@ -21,8 +23,18 @@ var firstChart = new Chart(ctx, {
             borderColor: "#19DCFF",
             titleColor: '#000',
         }]
-    }, 
+    },
     options: {
+        bands: {
+
+            bandLine: {
+                stroke: 2,
+                color: "black",
+                type: 'dashed',
+                label: 'Band line'
+            },
+
+        },
         tooltips: {
             enabled: true,
             backgroundColor: '#fff',
@@ -31,7 +43,7 @@ var firstChart = new Chart(ctx, {
             displayColors: false,
 
             callbacks: {
-                title: function(item, everything){
+                title: function (item, everything) {
                     return;
                 }
             }
@@ -53,17 +65,17 @@ var firstChart = new Chart(ctx, {
                 },
             }, ],
             yAxes: [{
-                ticks: {
-                    beginAtZero: true,
-                },
-                gridLines: {
-                    display: true,
-                    zeroLineColor: 'transparent',
-                   
-                    lineWidth: 1
-                },
+                    ticks: {
+                        beginAtZero: true,
+                    },
+                    gridLines: {
+                        display: true,
+                        zeroLineColor: 'transparent',
+
+                        lineWidth: 1
+                    },
                     id: 'y-axis-density',
-                    display: false  
+                    display: false
                 },
 
                 {
@@ -73,5 +85,81 @@ var firstChart = new Chart(ctx, {
             ],
         },
     },
-
 });
+
+var ctx = document.getElementById('secondChart').getContext('2d');
+
+
+var secondChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ['верхняя одежда', 'нижнее белье', 'спортивная одежда'],
+        datasets: [
+             {
+                label: 'Продажи',
+                data: [50, 25, 25],
+                backgroundColor: [
+                  '#40C34E',
+                  '#BFE053',
+                  '#21DDFF'
+                ],
+        }]
+    },
+    options: {
+        legend: {
+            position:"left",
+            labels: {
+                
+                fontColor:"#707070",
+            }
+        },
+        tooltips: {
+            enabled: true,
+            backgroundColor: '#fff',
+            titleFontColor: '#707070',
+            bodyFontColor: '#707070',
+            displayColors: false,
+
+            callbacks: {
+                title: function (item, everything) {
+                    return;
+                }
+            }
+        },
+
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            xAxes: [{
+                barPercentage: 1,
+                categoryPercentage: 0.3,
+                gridLines: {
+                    display: true,
+                    zeroLineColor: 'rgba(255, 255, 255, 0.2)',
+                    color: 'rgba(255, 255, 255, 0.2)',
+                    lineWidth: 1
+                },
+            }, ],
+            yAxes: [{
+                    ticks: {
+                        beginAtZero: true,
+                    },
+                    gridLines: {
+                        display: true,
+                        zeroLineColor: 'transparent',
+
+                        lineWidth: 1
+                    },
+                    id: 'y-axis-density',
+                    display: false
+                },
+
+                {
+                    id: 'y-axis-gravity',
+                    display: false
+                },
+            ],
+        },
+    },
+});
+
