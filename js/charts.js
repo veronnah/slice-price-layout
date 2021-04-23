@@ -3,6 +3,7 @@ var ctx = document.getElementById('firstChart').getContext('2d');
 Chart.defaults.global.defaultFontColor = '#fff';
 Chart.defaults.global.defaultFontStyle = 'light';
 
+
 var firstChart = new Chart(ctx, {
     type: 'line',
     data: {
@@ -26,7 +27,6 @@ var firstChart = new Chart(ctx, {
     },
     options: {
         bands: {
-
             bandLine: {
                 stroke: 2,
                 color: "black",
@@ -41,6 +41,7 @@ var firstChart = new Chart(ctx, {
             titleFontColor: '#707070',
             bodyFontColor: '#707070',
             displayColors: false,
+            intersect: false,
 
             callbacks: {
                 title: function (item, everything) {
@@ -106,19 +107,23 @@ var secondChart = new Chart(ctx, {
         }]
     },
     options: {
+       
         legend: {
             position:"left",
+            
             labels: {
                 
                 fontColor:"#707070",
             }
         },
+       
         tooltips: {
             enabled: true,
             backgroundColor: '#fff',
             titleFontColor: '#707070',
             bodyFontColor: '#707070',
             displayColors: false,
+            intersect: false,
 
             callbacks: {
                 title: function (item, everything) {
@@ -141,6 +146,7 @@ var secondChart = new Chart(ctx, {
                 },
             }, ],
             yAxes: [{
+                
                     ticks: {
                         beginAtZero: true,
                     },
@@ -162,4 +168,3 @@ var secondChart = new Chart(ctx, {
         },
     },
 });
-
