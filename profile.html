@@ -8,6 +8,7 @@
     <title>Slice Price | Profile</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/nouislider.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -35,7 +36,7 @@
                     </ul>
                 </nav>
             </div>
-          
+
             <div class="sidebar__profile-info">
                 <div class="balance">
                     <h4>Баланс</h4>
@@ -51,7 +52,8 @@
                     <h3 class="main__block-title">Информация о вашей компании</h3>
                     <div class="main__block-subtitle">ООО «Название компании»</div>
                     <div class="main__block-info_row"><span>Адрес</span> <span>119261, Ленинский пр-т., 79</span></div>
-                    <div class="main__block-info_row"><span>Юр. адрес</span> <span>119261, Ленинский пр-т., 79</span></div>
+                    <div class="main__block-info_row"><span>Юр. адрес</span> <span>119261, Ленинский пр-т., 79</span>
+                    </div>
                     <div class="main__block-info_row"><span>ИНН</span> <span>1234567890</span></div>
                     <div class="main__block-info_row"><span>КПП</span> <span>123456789087</span></div>
                     <div class="main__block-info_row"><span>ОГРНИП</span> <span>1234567890987</span></div>
@@ -60,39 +62,57 @@
                 </div>
                 <div class="main__blocks-block">
                     <h3 class="main__block-title">Добавление товара для модерации</h3>
-                    <p class="main__block-text"> Мы очень серьезно относимся к качеству фотографий товара, размещенного на сайте. Если не уверены,
+                    <p class="main__block-text"> Мы очень серьезно относимся к качеству фотографий товара, размещенного
+                        на сайте. Если не уверены,
                         что сможете сделать их самостоятельно, можете доверить эту работу сотрудникам маркетплейса!</p>
                     <button>Добавить товар</button>
                 </div>
                 <div class="main__blocks-block">
-                    <h3>Успешные/просроченные доставки<span class="block-question">?</span></h3> 
+                    <h3>Успешные/просроченные доставки<span class="block-question">?</span></h3>
                     <div class="block-rows">
-                        <div class="main__block-info_row-second"><span>Успешных доставок</span> <div><span class="percents">98,78% </span> <span>24 567</span> </div> </div>
-                        <div class="main__block-info_row-second"><span>Неуспешных доставок</span> <div><span class="percents">1,22% </span> <span>267</span> </div></div> 
-                        <div class="main__block-info_row-second"><span>Доставок с опозданием</span> <div><span class="percents">4,7% </span> <span>1 256</span> </div></div> 
+                        <div class="main__block-info_row-second"><span>Успешных доставок</span>
+                            <div><span class="percents">98,78% </span> <span>24 567</span> </div>
+                        </div>
+                        <div class="main__block-info_row-second"><span>Неуспешных доставок</span>
+                            <div><span class="percents">1,22% </span> <span>267</span> </div>
+                        </div>
+                        <div class="main__block-info_row-second"><span>Доставок с опозданием</span>
+                            <div><span class="percents">4,7% </span> <span>1 256</span> </div>
+                        </div>
                     </div>
                     <div class="block-canceled__delivery">
-                        <h3>Отмененные доставки</h3>
-                        <div class="main__block-info_row-second"><span class="canceled__delivery">Количество отменённых доставок </span> <div><span class="percents">4,7% </span> <span>1 256</span> </div></div> 
+                        <h3>Отмененные доставки<span class="block-question question-delivery">?</span></h3>
+                        <div class="main__block-info_row-second"><span class="canceled__delivery">Количество отменённых
+                                доставок </span>
+                            <div><span class="percents">4,7% </span> <span>1 256</span> </div>
+                        </div>
                     </div>
                     <div class="block-refuces">
-                        <h3>Процент отказов и их количество</h3>
-                        <div class="main__block-info_row-second"><span class="canceled__delivery">Количество отказов </span> <div><span class="percents">2,1% </span> <span>521</span> </div></div> 
+                        <h3>Процент отказов и их количество<span class="block-question">?</span></h3>
+                        <div class="main__block-info_row-second"><span class="canceled__delivery">Количество отказов
+                            </span>
+                            <div><span class="percents">2,1% </span> <span>521</span> </div>
+                        </div>
                     </div>
                     <button>Подробнее</button>
                 </div>
                 <div class="main__blocks-block">
-                   <h3>Продажи</h3>
+                    <h3>Продажи</h3>
                 </div>
                 <div class="main__blocks-block">
                     <div class="block__balance">
-                        <div class="main__block-info_row"><span>Баланс</span> <span class="block__balance-num">234 545.34 Р</span></div>
-                        <div class="main__block-info_row"><span>Оборот за 30 дней</span> <span class="block__balance-num">7 678 567. 34 Р</span></div>
-                        <div class="main__block-info_row"><span>Прибыль за 30 дней</span> <span class="block__balance-num">1 423 345 Р</span></div>
+                        <div class="main__block-info_row"><span>Баланс</span> <span class="block__balance-num">234
+                                545.34 Р</span></div>
+                        <div class="main__block-info_row"><span>Оборот за 30 дней</span> <span
+                                class="block__balance-num">7 678 567. 34 Р</span></div>
+                        <div class="main__block-info_row"><span>Прибыль за 30 дней</span> <span
+                                class="block__balance-num">1 423 345 Р</span></div>
                     </div>
                     <div class="block__celling">
-                        <div class="main__block-info_row"><span>Отказы</span> <span class="block__balance-num">254</span></div>
-                        <div class="main__block-info_row"><span>Количество продаж</span> <span class="block__balance-num">45 667</span></div>
+                        <div class="main__block-info_row"><span>Отказы</span> <span
+                                class="block__balance-num">254</span></div>
+                        <div class="main__block-info_row"><span>Количество продаж</span> <span
+                                class="block__balance-num">45 667</span></div>
                         <a href="#!">Подробнее</a>
                     </div>
                 </div>
@@ -100,34 +120,55 @@
             </div>
             <div class="analytics">
                 <h3>Аналитика доходов/расходов</h3>
+
                 <div class="analytics__chart">
-                    <div class="chart-nav">
-                        <div class="chart-nav__buttons">
-                            <button class="chart-nav__select-period">День</button>
-                            <button class="chart-nav__select-period">Неделя</button>
-                            <button class="chart-nav__select-period">Месяц</button>
-                            <button class="chart-nav__select-period">Год</button>
-                            <button class="chart-nav__select-period">Выбрать период</button>
-                        </div>
-                        <input type="range" name="" id="">
+                    <div class="month-slider-wrapper">
+                        <ul class="shortcuts">
+                            <li data-min-range="1">День</li>
+                            <li data-min-range="3">Неделя</li>
+                            <li data-min-range="6">Месяц</li>
+                            <li class="active" data-min-range="12">Год</li>
+                            <li data-min-range="0">Выбрать период</li>
+                        </ul>
+
+                        <div id="month-slider" class="slider"></div>
                     </div>
+
+                    <div class="sample-submit-data">
+                        <h4>Data to use when submitting the form:</h4>
+                        <p>
+                            <label for="month-range-min">Min:</label>
+                            <input name="month-range-min" type="text" value="" />
+                        </p>
+                        <p>
+                            <label for="month-range-min">Max:</label>
+                            <input name="month-range-max" type="text" value="" />
+                        </p>
+                    </div>
+
                     <div class="analytics-first__chart">
                         <canvas id="firstChart"></canvas>
                     </div>
+
                     <div class="analytics-second__chart">
                         <canvas id="secondChart"></canvas>
+                        <div id="legend"></div>
                     </div>
                 </div>
+
             </div>
         </main>
         <footer class="foot">
-                <a href="#!">Правила пользвоания сервисом</a>
-                <a href="#!">Политика конфиденциальности</a>
-                <a href="#!">Сервис разработан компанией Scripta IT</a>
+            <a href="#!">Правила пользвоания сервисом</a>
+            <a href="#!">Политика конфиденциальности</a>
+            <a href="#!">Сервис разработан компанией Scripta IT</a>
         </footer>
     </section>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
-    <script src="./js/charts.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/nouislider.min.js"></script>
+    <script src="./js/profile.js"></script>
 </body>
 
 </html>
