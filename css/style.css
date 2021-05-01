@@ -1315,7 +1315,7 @@ select::-ms-expand {
     overflow: hidden;
     border-radius: 10px;
     margin-left: 5px;
-
+    font-size: 14px;
 }
 .goods-category .select{
     margin-top: 15px;
@@ -1357,10 +1357,47 @@ select {
      max-width: 500px;
 }
 
+.goods-size__group {
+    margin-top: 94px;
+}
+.goods-size__group-row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.group-row__item .select{
+    max-width: 96px;
+}
+.group-row__item {
+    width: 100%;
+}
+.group-row__item h4{
+    max-width: 100px;
+}
+
+.goods-size__compos  h4:last-child {
+    margin-top: 30px;
+}
+
+.spin{
+    display: flex;
+    align-items: center;
+}
+
+.spin input{
+    text-align: center;
+    width: 48px; 
+    height: 36px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #EFEFEF;
+}
 
 .foot.foot-goods {
     margin-top: 200px;
 }
+
 
 @media(max-width: 1860px) {
 
