@@ -22,9 +22,9 @@
 }());
 
 //input number	
-var spins = document.getElementsByClassName("spin");
-for (var i = 0, len = spins.length; i < len; i++) {
-    var spin = spins[i],
+let spins = document.getElementsByClassName("spin");
+for (let i = 0, len = spins.length; i < len; i++) {
+    let spin = spins[i],
         span = spin.getElementsByTagName("span"),
         input = spin.getElementsByTagName("input")[0];
     

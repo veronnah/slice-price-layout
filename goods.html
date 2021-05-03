@@ -2,28 +2,56 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slice Price | Добавление товара</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/nouislider.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slice Price | Добавление товара</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/nouislider.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="nav-toggle__wrap">
-        <div class="nav-toggle">
-            <div class="nav-toggle-bar"></div>
-        </div>
+  <div class="nav-toggle__wrap">
+    <div class="nav-toggle">
+      <div class="nav-toggle-bar"></div>
     </div>
-    <nav id="nav" class="nav">
-        <h1 class="title">
+  </div>
+  <nav id="nav" class="nav">
+    <h1 class="title">
+      <img src="./img/titile-logo.svg">
+      Slice Price
+    </h1>
+    <ul>
+      <li><a href="#!">Мой профиль</a></li>
+      <li><a href="#!">Добавление товара </a></li>
+      <li><a href="#!">Расход и доход</a></li>
+      <li><a href="#!">Заказы</a></li>
+      <li><a href="#!">Аналитика продаж и Финансы</a></li>
+      <li><a href="#!">Настройка и подключение услуг по продвижению</a></li>
+      <li><a href="#!">Поддержка</a></li>
+      <li><a href="#!">Рейтинг идей</a></li>
+    </ul>
+    <div class="balance">
+      <h4>Баланс</h4>
+      <div><img src="./img/circle.svg"> 234 545.34 Р</div>
+    </div>
+    <div class="notifications"><img src="./img/circle.svg">Уведомления</div>
+    <div><img src="./img/circle.svg">Василий Теркин</div>
+  </nav>
+  <section class="page-content page-content__goods">
+    <aside class="sidebar">
+      <div class="sidebar-nav">
+        <div class="sidebar__title">
+          <h1 class="title">
             <img src="./img/titile-logo.svg">
             Slice Price
-        </h1>
-        <ul>
+          </h1>
+          <h4 class="subtitle">ИП «Название компании»</h4>
+        </div>
+        <nav class="sidebar-nav">
+          <ul>
             <li><a href="#!">Мой профиль</a></li>
             <li><a href="#!">Добавление товара </a></li>
             <li><a href="#!">Расход и доход</a></li>
@@ -32,223 +60,230 @@
             <li><a href="#!">Настройка и подключение услуг по продвижению</a></li>
             <li><a href="#!">Поддержка</a></li>
             <li><a href="#!">Рейтинг идей</a></li>
-        </ul>
+          </ul>
+        </nav>
+      </div>
+      <div class="sidebar__profile-info">
         <div class="balance">
-            <h4>Баланс</h4>
-            <div><img src="./img/circle.svg"> 234 545.34 Р</div>
+          <h4>Баланс</h4>
+          <div><img src="./img/circle.svg"> 234 545.34 Р</div>
         </div>
         <div class="notifications"><img src="./img/circle.svg">Уведомления</div>
         <div><img src="./img/circle.svg">Василий Теркин</div>
-    </nav>
-    <section class="page-content page-content__goods">
-        <aside class="sidebar">
-            <div class="sidebar-nav">
-                <div class="sidebar__title">
-                    <h1 class="title">
-                        <img src="./img/titile-logo.svg">
-                        Slice Price
-                    </h1>
-                    <h4 class="subtitle">ИП «Название компании»</h4>
-                </div>
-                <nav class="sidebar-nav">
-                    <ul>
-                        <li><a href="#!">Мой профиль</a></li>
-                        <li><a href="#!">Добавление товара </a></li>
-                        <li><a href="#!">Расход и доход</a></li>
-                        <li><a href="#!">Заказы</a></li>
-                        <li><a href="#!">Аналитика продаж и Финансы</a></li>
-                        <li><a href="#!">Настройка и подключение услуг по продвижению</a></li>
-                        <li><a href="#!">Поддержка</a></li>
-                        <li><a href="#!">Рейтинг идей</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="sidebar__profile-info">
-                <div class="balance">
-                    <h4>Баланс</h4>
-                    <div><img src="./img/circle.svg"> 234 545.34 Р</div>
-                </div>
-                <div class="notifications"><img src="./img/circle.svg">Уведомления</div>
-                <div><img src="./img/circle.svg">Василий Теркин</div>
-            </div>
+      </div>
 
-        </aside>
+    </aside>
 
-        <main>
-            <div class="goods__title">
-                <h3>О товаре</h3>
-                <p><span>Важно:</span> Мы очень серьезно относимся к качеству фотографий товара, размещенного на сайте. Если не уверены, что сможете сделать их самостоятельно, можете доверить эту работу сотрудникам маркетплейса!</p>
+    <main>
+      <div class="goods__title">
+        <h3>О товаре</h3>
+        <p><span>Важно:</span> Мы очень серьезно относимся к качеству фотографий товара, размещенного на сайте. Если не
+          уверены, что сможете сделать их самостоятельно, можете доверить эту работу сотрудникам маркетплейса!</p>
+      </div>
+      <div class="goods__adding">
+        <div class="goods-characteristic">
+          <div class="goods-category">
+            <h4>Категория</h4>
+            <div class="select">
+              <select name="slct" id="slct">
+                <option value="1">Футболка</option>
+                <option value="2">Свитшот</option>
+                <option value="3">Куртка</option>
+              </select>
             </div>
-            <div class="goods__adding">
-                <div class="goods-characteristic">
-                    <div class="goods-category">
-                        <h4>Категория</h4>
-                        <div class="select">
-                            <select name="slct" id="slct">
-                              <option value="1">Футболка</option>
-                              <option value="2">Свитшот</option>
-                              <option value="3">Куртка</option>
-                            </select>
-                          </div>
-                        <h4>Сезон</h4>
-                        <div class="select">
-                            <select name="slct" id="slct">
-                              <option value="1">Демисезонная</option>
-                              <option value="2">Лето</option>
-                              <option value="3">Весна</option>
-                            </select>
-                          </div>
-                        <h4>Коллекция</h4>
-                        <div class="select">
-                            <select name="slct" id="slct">
-                              <option value="1">Весна-лето 2020</option>
-                              <option value="2">Весна-лето 2020</option>
-                              <option value="3">Весна-лето 2020</option>
-                            </select>
-                          </div>
-                        <h4>Бренд в одежде и обуви (опция)</h4>
-                        <div class="select">
-                            <select name="slct" id="slct">
-                              <option value="1">Название бренда</option>
-                              <option value="2">Название бренда</option>
-                              <option value="3">Название бренда</option>
-                            </select>
-                          </div>
-                        <h4>Пол</h4>
-                        <div class="select">
-                            <select name="slct" id="slct">
-                              <option value="1">Женский</option>
-                              <option value="2">Мужской</option>
-                            </select>
-                          </div>
-                        <h4>Тип упаковки одежды</h4>
-                        <div class="select">
-                            <select name="slct" id="slct">
-                              <option value="1">Пакет</option>
-                              <option value="2">Коробка</option>
-                              <option value="3">Пакет</option>
-                            </select>
-                          </div>
-                        <h4>Цвет</h4>
-                        <div class="select">
-                            <select name="slct" id="slct">
-                              <option value="1">Хаки</option>
-                              <option value="2">Черный</option>
-                              <option value="3">Белый</option>
-                            </select>
-                          </div>
+            <h4>Сезон</h4>
+            <div class="select">
+              <select name="slct" id="slct">
+                <option value="1">Демисезонная</option>
+                <option value="2">Лето</option>
+                <option value="3">Весна</option>
+              </select>
+            </div>
+            <h4>Коллекция</h4>
+            <div class="select">
+              <select name="slct" id="slct">
+                <option value="1">Весна-лето 2020</option>
+                <option value="2">Весна-лето 2020</option>
+                <option value="3">Весна-лето 2020</option>
+              </select>
+            </div>
+            <h4>Бренд в одежде и обуви (опция)</h4>
+            <div class="select">
+              <select name="slct" id="slct">
+                <option value="1">Название бренда</option>
+                <option value="2">Название бренда</option>
+                <option value="3">Название бренда</option>
+              </select>
+            </div>
+            <h4>Пол</h4>
+            <div class="select">
+              <select name="slct" id="slct">
+                <option value="1">Женский</option>
+                <option value="2">Мужской</option>
+              </select>
+            </div>
+            <h4>Тип упаковки одежды</h4>
+            <div class="select">
+              <select name="slct" id="slct">
+                <option value="1">Пакет</option>
+                <option value="2">Коробка</option>
+                <option value="3">Пакет</option>
+              </select>
+            </div>
+            <h4>Цвет</h4>
+            <div class="select">
+              <select name="slct" id="slct">
+                <option value="1">Хаки</option>
+                <option value="2">Черный</option>
+                <option value="3">Белый</option>
+              </select>
+            </div>
+          </div>
+          <div class="goods-size">
+            <div class="goods-size__compos">
+              <h4>Состав материала</h4>
+              <div class="select">
+                <select name="slct" id="slct">
+                  <option value="1">Хлопок</option>
+                  <option value="2">Хлопок</option>
+                  <option value="3">Хлопок</option>
+                </select>
+              </div>
+              <div class="select">
+                <select name="slct" id="slct">
+                  <option value="1">Полиэстер</option>
+                  <option value="2">Полиэстер</option>
+                  <option value="3">Полиэстер</option>
+                </select>
+              </div>
+              <div class="select">
+                <select name="slct" id="slct">
+                  <option value="1">Шерсть</option>
+                  <option value="2">Шерсть</option>
+                  <option value="3">Шерсть</option>
+                </select>
+              </div>
+              <div class="goods-size__group">
+                <div class="goods-size__group-row">
+                  <div class="group-row__item">
+                    <h4>Размер
+                      производителя</h4>
+                    <div class="select">
+                      <select name="slct" id="slct">
+                        <option value="1">М</option>
+                        <option value="2">S</option>
+                        <option value="3">L</option>
+                      </select>
                     </div>
-                    <div class="goods-size">    
-                        <div class="goods-size__compos">
-                            <h4>Состав материала</h4>
-                            <div class="select">
-                                <select name="slct" id="slct">
-                                  <option value="1">Хлопок</option>
-                                  <option value="2">Хлопок</option>
-                                  <option value="3">Хлопок</option>
-                                </select>
-                              </div>
-                              <div class="select">
-                                <select name="slct" id="slct">
-                                  <option value="1">Полиэстер</option>
-                                  <option value="2">Полиэстер</option>
-                                  <option value="3">Полиэстер</option>
-                                </select>
-                              </div>
-                              <div class="select">
-                                <select name="slct" id="slct">
-                                  <option value="1">Шерсть</option>
-                                  <option value="2">Шерсть</option>
-                                  <option value="3">Шерсть</option>
-                                </select>
-                              </div>
-                              <div class="goods-size__group">
-                                  <div class="goods-size__group-row">
-                                      <div class="group-row__item">
-                                        <h4>Размер 
-                                            производителя</h4>
-                                        <div class="select">
-                                            <select name="slct" id="slct">
-                                              <option value="1">М</option>
-                                              <option value="2">S</option>
-                                              <option value="3">L</option>
-                                            </select>
-                                          </div>
-                                      </div>
-                                      <div class="group-row__item">
-                                        <h4>Российский
-                                            размер</h4>
-                                        <div class="select">
-                                            <select name="slct" id="slct">
-                                              <option value="1">46</option>
-                                              <option value="2">47</option>
-                                              <option value="3">38</option>
-                                            </select>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <h4>Размер модели на фото (опция)</h4>
-                                  <div class="goods-size__group-row">
-                                      <div class="group-row__item">
-                                        <div class="select">
-                                            <select name="slct" id="slct">
-                                              <option value="1">М</option>
-                                              <option value="2">S</option>
-                                              <option value="3">L</option>
-                                            </select>
-                                          </div>
-                                      </div>
-                                      <div class="group-row__item">
-                                        <div class="select">
-                                            <select name="slct" id="slct">
-                                              <option value="1">46</option>
-                                              <option value="2">47</option>
-                                              <option value="3">38</option>
-                                            </select>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <h4>Параметры модели на фото</h4>
-                              <div class="select">
-                                  <select name="slct" id="slct">
-                                    <option value="1">Параметры модели на фото</option>
-                                    <option value="2">Параметры модели на фото</option>
-                                    <option value="3">Параметры модели на фото</option>
-                                  </select>
-                                </div>
-                                <h4>Вес в упаковке, г</h4>
-                                <div class="select">
-                                    <select name="slct" id="slct">
-                                      <option value="1">120 гр.</option>
-                                      <option value="2">150 гр.</option>
-                                      <option value="3">140 гр.</option>
-                                    </select>
-                                  </div>
-
-                        </div>
-                        <div class="goods-size__percents">
-                            <h4> % содержания</h4>
-                            <div class="spin"><input value="0" /><span>&ndash;</span><span>+</span></div>
-                        </div>
-              
-                       
+                  </div>
+                  <div class="group-row__item">
+                    <h4>Российский
+                      размер</h4>
+                    <div class="select">
+                      <select name="slct" id="slct">
+                        <option value="1">46</option>
+                        <option value="2">47</option>
+                        <option value="3">38</option>
+                      </select>
                     </div>
+                  </div>
                 </div>
-            </div>
-           
-        </main>
-        <footer class="foot foot-goods">
-            <a href="#!">Правила пользвоания сервисом</a>
-            <a href="#!">Политика конфиденциальности</a>
-            <a href="#!">Сервис разработан компанией Scripta IT</a>
-        </footer>
-    </section>
+                <h4>Размер модели на фото (опция)</h4>
+                <div class="goods-size__group-row">
+                  <div class="group-row__item">
+                    <div class="select">
+                      <select name="slct" id="slct">
+                        <option value="1">М</option>
+                        <option value="2">S</option>
+                        <option value="3">L</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="group-row__item">
+                    <div class="select">
+                      <select name="slct" id="slct">
+                        <option value="1">46</option>
+                        <option value="2">47</option>
+                        <option value="3">38</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4>Параметры модели на фото</h4>
+              <div class="select">
+                <select name="slct" id="slct">
+                  <option value="1">Параметры модели на фото</option>
+                  <option value="2">Параметры модели на фото</option>
+                  <option value="3">Параметры модели на фото</option>
+                </select>
+              </div>
+              <h4 class="last-heading__group">Вес в упаковке, г</h4>
+              <div class="select">
+                <select name="slct" id="slct">
+                  <option value="1">120 гр.</option>
+                  <option value="2">150 гр.</option>
+                  <option value="3">140 гр.</option>
+                </select>
+              </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./js/nouislider.min.js"></script>
-    <script src="./js/goods.js"></script>
+            </div>
+            <div class="goods-size__percents">
+              <h4> % содержания</h4>
+              <div class="spin"><input value="0" /><span class="spin-minus">&ndash;</span><span
+                  class="spin-plus">+</span></div>
+              <div class="spin"><input value="0" /><span class="spin-minus">&ndash;</span><span
+                  class="spin-plus">+</span></div>
+              <div class="spin"><input value="0" /><span class="spin-minus">&ndash;</span><span
+                  class="spin-plus">+</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="goods__add-agreement">
+        <div class="agreement-wrapper">
+          <label class="agreement"><span>Я подтверждаю что карточка соответсвует <br> <a href="#!"> условиям публикации
+                товара</a> </span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <button>Отправить товар на модерацию</button>
+        </div>
+      </div>
+      <div class="goods__adding">
+        <div class="goods-instructions">
+          <h4>Инструкция по уходу</h4>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+
+          <h4>В наличии (едениц)</h4>
+          <div class="select select-quantity">
+            <select name="slct" id="slct">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+
+          <h4>Фотографии</h4>
+          <p><span>Важно:</span>: Если не уверены, что сможете сделать их самостоятельно, можете доверить эту работу сотрудникам маркетплейса! <br>
+          <span>Минимальное разрешение:</span>1080x1920 72dpi</p>
+            
+        </div>
+      </div>
+    </main>
+
+
+    <footer class="foot foot-goods">
+      <a href="#!">Правила пользвоания сервисом</a>
+      <a href="#!">Политика конфиденциальности</a>
+      <a href="#!">Сервис разработан компанией Scripta IT</a>
+    </footer>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/nouislider.min.js"></script>
+  <script src="./js/goods.js"></script>
 </body>
 
 </html>
