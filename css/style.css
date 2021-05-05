@@ -341,6 +341,7 @@ a.copyright {
 
 .page-content>main {
     grid-area: main;
+    position: relative;
 }
 
 .page-content>footer {
@@ -1435,15 +1436,17 @@ select {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     right: 0;
     font-size: 20px;
 }
-.agreement-wrapper{
+
+.agreement-wrapper {
     padding-right: 30px;
+    padding-top: 10px;
 }
+
 .agreement {
     display: block;
     position: relative;
@@ -1481,10 +1484,11 @@ select {
     font-size: 14px;
     transition: .3s all;
 }
-.goods__add-agreement button:hover{
+
+.goods__add-agreement button:hover {
     background-color: #36a541;
 }
-/* Hide the browser's default checkbox */
+
 .agreement input {
     position: absolute;
     opacity: 0;
@@ -1499,7 +1503,7 @@ select {
     left: 0;
     height: 24px;
     width: 24px;
-    background-color: rgb(177, 172, 172);
+    background-color: rgb(230, 228, 228);
     border-radius: 6px;
     -webkit-box-shadow: -7px 11px 22px -13px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -7px 11px 22px -13px rgba(0, 0, 0, 0.75);
@@ -1535,9 +1539,10 @@ select {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-.goods-instructions textarea{
+
+.goods-instructions textarea {
     background-color: #EFEFEF;
-    width: 576px; 
+    width: 576px;
     height: 120px;
     border-radius: 10px;
     border: none;
@@ -1546,14 +1551,75 @@ select {
     box-sizing: border-box;
     margin-bottom: 50px;
 }
-.goods-instructions h4{
+
+.goods-instructions h4 {
     font-size: 14px;
     margin-bottom: 15px;
 }
-.foot.foot-goods {
-    margin-top: 200px;
+
+.goods-instructions p span {
+    font-weight: 700;
 }
 
+.goods-instructions p {
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 600px;
+}
+
+.select-quantity {
+    margin-bottom: 50px;
+}
+
+.goods-card {
+    margin-top: 60px;
+    max-width: 576px;
+}
+
+.goods-card__heading {
+    width: 100%;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EFEFEF;
+    padding-left: 14px;
+    border-radius: 10px;
+}
+
+.goods-card__heading button {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #DB1212;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 96px;
+    font-size: 14px;
+}
+
+.goods-card__pic {
+    width: 264px;
+    height: 336px;
+    background-color: #ACACAC;
+    margin-top: 24px;
+}
+
+.goods__add_pic-btn {
+    width: 100%;
+    background-color: #40C34E;
+    margin-top: 30px;
+    color: #fff;
+    height: 48px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 200px;
+}
+
+.foot.foot-goods {
+    margin-top: 60px;
+}
 
 @media(max-width: 1860px) {
 
@@ -1637,6 +1703,22 @@ select {
 }
 
 @media(max-width: 1450px) {
+    .goods__add-agreement {
+        display: flex;
+        justify-content: flex-start;
+        width: unset;
+        position: absolute;
+        top: unset;
+        left: 24px;
+        bottom: 30px;
+        font-size: 20px;
+    }
+
+    .goods-characteristic {
+        display: grid;
+        grid-template-columns: minmax(max-content, 300px) minmax(200px, 1fr);
+    }
+
     .month-slider-wrapper {
         flex-wrap: wrap;
     }
@@ -1738,6 +1820,10 @@ select {
 }
 
 @media(max-width: 1000px) {
+    .goods__title {
+        margin-top: 60px;
+    }
+
     .month-slider-wrapper {
         flex-direction: column;
     }
@@ -1756,6 +1842,10 @@ select {
 }
 
 @media(max-width: 900px) {
+    .goods-size {
+        grid-template-columns: minmax(auto, 285px);
+    }
+
     .main__blocks-block:nth-child(4) {
         grid-column: 1/4;
         grid-row: 6;
@@ -1810,6 +1900,14 @@ select {
         margin-bottom: 10px;
     }
 
+    .goods__add_pic-btn {
+        margin-bottom: 220px;
+    }
+
+    .goods__add-agreement {
+        bottom: 50px;
+    }
+
     footer a {
         position: unset
     }
@@ -1822,6 +1920,39 @@ select {
 @media(max-width: 700px) {
     .main-block {
         grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 630px) {
+    .goods-characteristic {
+        grid-template-columns: minmax(200px, 1fr);
+    }
+
+    .goods-instructions textarea {
+        width: 420px;
+    }
+
+    .goods__adding {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .goods-instructions textarea {
+        width: 100%;
+    }
+
+    .goods__add_pic-btn {
+        margin-bottom: 250px;
+    }
+
+    .goods__add-agreement {
+        bottom: 90px;
+    }
+
+    .goods__add-agreement button {
+        height: 36px;
+        padding: 10px;
+        width: unset;
     }
 }
 
