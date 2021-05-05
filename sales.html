@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slice Price | Продажи</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/nouislider.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="nav-toggle__wrap">
+        <div class="nav-toggle">
+            <div class="nav-toggle-bar"></div>
+        </div>
+    </div>
+    <nav id="nav" class="nav">
+        <h1 class="title">
+            <img src="./img/titile-logo.svg">
+            Slice Price
+        </h1>
+        <ul>
+            <li><a href="#!">Мой профиль</a></li>
+            <li><a href="#!">Добавление товара </a></li>
+            <li><a href="#!">Расход и доход</a></li>
+            <li><a href="#!">Заказы</a></li>
+            <li><a href="#!">Аналитика продаж и Финансы</a></li>
+            <li><a href="#!">Настройка и подключение услуг по продвижению</a></li>
+            <li><a href="#!">Поддержка</a></li>
+            <li><a href="#!">Рейтинг идей</a></li>
+        </ul>
+        <div class="balance">
+            <h4>Баланс</h4>
+            <div><img src="./img/circle.svg"> 234 545.34 Р</div>
+        </div>
+        <div class="notifications"><img src="./img/circle.svg">Уведомления</div>
+        <div><img src="./img/circle.svg">Василий Теркин</div>
+    </nav>
+    <section class="page-content">
+        <aside class="sidebar">
+            <div class="sidebar-nav">
+                <div class="sidebar__title">
+                    <h1 class="title">
+                        <img src="./img/titile-logo.svg">
+                        Slice Price
+                    </h1>
+                    <h4 class="subtitle">ИП «Название компании»</h4>
+                </div>
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li><a href="#!">Мой профиль</a></li>
+                        <li><a href="#!">Добавление товара </a></li>
+                        <li><a href="#!">Расход и доход</a></li>
+                        <li><a href="#!">Заказы</a></li>
+                        <li><a href="#!">Аналитика продаж и Финансы</a></li>
+                        <li><a href="#!">Настройка и подключение услуг по продвижению</a></li>
+                        <li><a href="#!">Поддержка</a></li>
+                        <li><a href="#!">Рейтинг идей</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sidebar__profile-info">
+                <div class="balance">
+                    <h4>Баланс</h4>
+                    <div><img src="./img/circle.svg"> 234 545.34 Р</div>
+                </div>
+                <div class="notifications"><img src="./img/circle.svg">Уведомления</div>
+                <div><img src="./img/circle.svg">Василий Теркин</div>
+            </div>
+
+        </aside>
+
+        <main>
+
+            <div class="tabs">
+                <div class="tab">
+                    <input type="radio" id="tab-1" name="tab-group-1" checked>
+                    <label id="tab1" for="tab-1" onclick="getIndex(0);">Все</label>
+                    <div class="tabs__content">
+
+                        <div class="month-slider-wrapper month-slider-wrapper__sales">
+                            <ul class="shortcuts shortcuts__sales">
+                                <li data-min-range="1">День</li>
+                                <li data-min-range="3">Неделя</li>
+                                <li data-min-range="6">Месяц</li>
+                                <li class="active" data-min-range="12">Год</li>
+                                <li data-min-range="0">Выбрать период</li>
+                            </ul>
+                            <div id="month-slider1" class="slider month-slider"></div>
+                        </div>
+                        <div class="main__blocks-block selling-block selling-block__sales">
+                            <h3>Продажи</h3>
+                            <div class="block__selling-head">
+                                <div>Номер</div>
+                                <div>Наименование</div>
+                                <div>Количество</div>
+                                <div>Цена</div>
+                            </div>
+                            <div class="block__selling-content">
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 1 700 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab">
+                    <input type="radio" id="tab-2" name="tab-group-1" checked>
+                    <label id="tab2" for="tab-2" onclick="getIndex(1);">Доход</label>
+                    <div class="tabs__content">
+
+                        <div class="month-slider-wrapper month-slider-wrapper__sales">
+                            <ul class="shortcuts shortcuts__sales">
+                                <li data-min-range="1">День</li>
+                                <li data-min-range="3">Неделя</li>
+                                <li data-min-range="6">Месяц</li>
+                                <li class="active" data-min-range="12">Год</li>
+                                <li data-min-range="0">Выбрать период</li>
+                            </ul>
+                            <div id="month-slider2" class="slider month-slider"></div>
+
+
+                        </div>
+                        <div class="main__blocks-block selling-block selling-block__sales">
+                            <h3>Продажи</h3>
+                            <div class="block__selling-head">
+                                <div>Номер</div>
+                                <div>Наименование</div>
+                                <div>Количество</div>
+                                <div>Цена</div>
+                            </div>
+                            <div class="block__selling-content">
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Носки мужские</div>
+                                        <div>Футболка мужская с Длинным названием</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-plus">+ 2 560 Р</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input type="radio" id="tab-3" name="tab-group-1" checked>
+                    <label id="tab3" for="tab-3" onclick="getIndex(2);">Расход</label>
+
+                    <div class="tabs__content">
+
+                        <div class="month-slider-wrapper month-slider-wrapper__sales">
+                            <ul class="shortcuts shortcuts__sales">
+                                <li data-min-range="1">День</li>
+                                <li data-min-range="3">Неделя</li>
+                                <li data-min-range="6">Месяц</li>
+                                <li class="active" data-min-range="12">Год</li>
+                                <li data-min-range="0">Выбрать период</li>
+                            </ul>
+                            <div id="month-slider3" class="slider month-slider"></div>
+
+
+                        </div>
+                        <div class="main__blocks-block selling-block selling-block__sales">
+                            <h3>Продажи</h3>
+                            <div class="block__selling-head">
+                                <div>Номер</div>
+                                <div>Наименование</div>
+                                <div>Количество</div>
+                                <div>Цена</div>
+                            </div>
+                            <div class="block__selling-content">
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                                <div class="selling-content-item">
+                                    <div class="item-num">
+                                        <div>№45 567</div>
+                                        <div class="item-date">20.04.2020</div>
+                                        <div class="item-time">В 14:45</div>
+                                    </div>
+                                    <div class="item-title">
+                                        <div>Оплата рекламного баннера
+                                            на платформе</div>
+                                    </div>
+                                    <div class="item-quantity">
+                                        <div>1 шт.</div>
+                                        <div>2 шт.</div>
+                                    </div>
+                                    <div class="item-price item-price__sales-minus">- 2 560 Р</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="tab-xml" for="tab-3">Выгрузить XML</button>
+        </main>
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/nouislider.min.js"></script>
+    <script src="./js/sales.js"></script>
+</body>
+
+</html>
