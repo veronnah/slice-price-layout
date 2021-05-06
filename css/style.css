@@ -1687,10 +1687,12 @@ select {
 .tab [type=radio] {
     opacity: 0;
 }
-#tab1{
+
+#tab1 {
     margin-left: 30px;
 }
-#tab-xml{
+
+#tab-xml {
     color: #333333;
     font-weight: 600;
     padding: 0 10;
@@ -1703,6 +1705,7 @@ select {
     margin-left: 22em;
     z-index: 2;
 }
+
 .tabs__content {
     position: absolute;
     top: 28px;
@@ -1883,6 +1886,27 @@ select {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .page-content__sales {
+        grid-template-columns: unset;
+        grid-template-areas: none;
+    }
+
+    .selling-content-item {
+        flex-wrap: wrap;
+    }
+
+    .nav-toggle__wrap {
+        z-index: 10;
+    }
+
+    .nav.expanded {
+        z-index: 9;
+    }
+
+    #tab-xml {
+        margin-left: 2em;
+    }
+
     .page-content>footer {
         position: absolute;
         bottom: 0;
@@ -1950,6 +1974,10 @@ select {
 
     .shortcuts {
         margin-bottom: 40px;
+    }
+
+    .tabs__content {
+        left: -122px;
     }
 
     .foot a:nth-child(2) {
@@ -2043,6 +2071,12 @@ select {
     }
 }
 
+@media(max-width: 650px) {
+    .tabs__content {
+        left: -40px;
+    }
+}
+
 @media(max-width: 630px) {
     .goods-characteristic {
         grid-template-columns: minmax(200px, 1fr);
@@ -2074,6 +2108,18 @@ select {
         padding: 10px;
         width: unset;
     }
+
+    .tabs {
+        flex-wrap: wrap;
+    }
+
+    .tabs__content {
+        top: 100px;
+    }
+
+    .month-slider-wrapper {
+        padding: 0px 50px;
+    }
 }
 
 @media(max-width: 600px) {
@@ -2095,6 +2141,10 @@ select {
 @media(max-width: 500px) {
     .analytics-second__chart {
         overflow-x: hidden;
+    }
+
+    #tab1 {
+        margin-left: 0;
     }
 }
 
