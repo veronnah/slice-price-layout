@@ -1,12 +1,19 @@
 # slice-price
-https://veronnah.github.io/slice-price/
+
+Sign in page:
+https://veronnah.github.io/slice-price-layout/
 <br>
-https://veronnah.github.io/slice-price/analytics.html
+Analytics page:
+https://veronnah.github.io/slice-price-layout/analytics.html
 <br>
-https://veronnah.github.io/slice-price/admin.html
+Admin page:
+https://veronnah.github.io/slice-price-layout/admin.html#!
 <br>
-https://veronnah.github.io/slice-price/sales.html
+Sales page:
+https://veronnah.github.io/slice-price-layout/sales.html
 <br>
-https://veronnah.github.io/slice-price/goods.html
+Goods page:
+https://veronnah.github.io/slice-price-layout/goods.html
 <br>
-https://veronnah.github.io/slice-price/profile.html
+Dashboard:
+https://veronnah.github.io/slice-price-layout/profile.html
